@@ -8,7 +8,6 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
-    test = models.BigIntegerField(null=True, blank=True,)
 
     def __str__(self):
         return self.title
@@ -32,3 +31,13 @@ class HomePage(models.Model):
     @property
     def field(self):
         return "body"
+
+
+class CustomModel344pm(models.Model):
+    "Generated Model"
+    meaningless_field = models.TextField()
+
+
+class CustomModel345pm(models.Model):
+    "Generated Model"
+    test = models.BigIntegerField()
